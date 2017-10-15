@@ -1,0 +1,197 @@
+/*! HTML CSS Bootstrap Template v1.0 | By Lamis salmy 	| For SHABABIC  */
+
+/*---------------------------------------------------------------------------
+[Master Stylesheet]
+
+Project Name:   SHABABIC
+Version:        1
+Last change:    12-10-2017
+Primary use:    E-Learning System
+
+[Table Of Contents]
+/*
+FONT FAMILY
+HEADER
+TYPOGRAPHY
+HERO BACKGROUND
+***********************************************************
+
+*/
+/* FONT FAMILY */
+@font-face {
+    font-family: ElMessiri-Bold;
+    src: url(HelveticaNeue-Reg.ttf);
+}
+@font-face {
+    font-family: HelveticaNeue-Reg;
+    src: url(ElMessiri-Bold.ttf);
+}
+@font-face {
+    font-family: JF-Flat-regular;
+    src: url(JF-Flat-regular.ttf);
+}
+/*
+.hvr-bounce-to-left:hover, .hvr-bounce-to-left:focus, .hvr-bounce-to-left:active {
+  color: #fff200;
+}
+*/
+/* TYPOGRAPHY */
+.ml6{margin-left: 6px}
+.mr6{margin-right: 7px}
+.navbar-not {background-color: #d8c304; font-weight: bold; color: #fff; padding: 2px 2px; border-radius: 100%; display: inline-block; width: 7px; height: 7px}
+p{font-family: 'JF-Flat-regular'; line-height: 27px}
+h1, h2, h3, h4, h5, h6, a{font-family: 'ElMessiri-Bold'}
+ul{margin: 0;padding: 0} li{list-style: none;}
+.NoBkg{background: none;} .noRaduis{border-radius: 0}
+.sm-Line{width: 30px; height: 3px; background: #fff200;margin: 30px 0}
+.sm-LineCented{width: 30px; height: 3px; background: #fff200;margin: 30px auto}
+.p50 {width: 50%;}
+.mt40 {margin-top: 40px;}
+.mt50 {margin-top: 50px;}
+.mt80{margin-top: 80px}
+.mt200{padding-top: 240px;} .mt100{padding-top: 100px;} .white{color: white}
+.pad13{padding: 13px 0}
+
+.geekImg{position: relative; }
+/* BUTTON */
+.md-Button{
+  width: 180px;
+  height: 45px;
+  background: white;
+  display: block;
+  color: #333;
+  border: 0;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 51px
+}
+.Blue-md-Button{
+  width: 180px;
+  height: 45px;
+  background: #2e70a1;
+  display: block;
+  color: #fff;
+  border: 0;
+  font-weight: bold;
+  font-size: 15px;
+}
+.sm-Button{
+  width: 140px;
+  height: 40px;
+  background: #2e70a1;
+  display: block;
+  color: #fff;
+  border: 0;
+  font-weight: bold;
+  font-size: 15px;
+
+}
+/* HEADER & NAVBAR  */
+header{background: white; z-index: 9999}
+header ul li{display: inline-block;margin: 7px}
+header ul li a{color: #333;}
+.navbar-default .navbar-nav>li>a{position: relative;}
+.navbar-default .navbar-nav li a:before{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #fff200;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  margin: 10px auto;
+  padding: 0;
+  transition: .5s
+}
+.navbar-default .navbar-nav>li:hover a:before{width: 50%;}
+.navbar-brand{margin-top: 7px;}
+.navbar-default .navbar-toggle .icon-bar,
+.navbar-default .navbar-toggle .icon-bar:hover,
+.navbar-default .navbar-toggle .icon-bar:focus{background: #fff}
+.navbar-default .navbar-toggle, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{border: 0;background: none}
+.navbar{border-left: 0; border-right: 0; z-index: 9999}
+.navbar-left {
+    border-color: #e7e7e7;
+    border-right: 1px solid rgba(255, 255, 255, .3);
+    line-height: 4em;
+    height: 100%;
+    display: inline-block;
+    margin: 0;
+}
+
+.navbar-default{border-color: rgba(255, 255, 255, .3);}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover{color: white;background:none}
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{color: white; font-size: 14px; font-weight: bold}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{background: none; color: white; border: 0}
+/* hero background*/
+.Hero-Bakg{
+  width: 100%;
+  height: 100vh;
+  background: url(../images/Bkg/Bkg-1.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Hero-desc{position: relative;}
+
+
+/* LOGIN PAGE */
+.Login-Bakg {
+  width: 100%;
+  height: 400px;
+  background: url(../images/Bkg/Bkg-1.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Login{color: #333;}
+/* ***************** ADD FILES ****************** */
+/* FILE UPLOAD WIDGET*/
+#file{
+  visibility: hidden; width: 1px;}
+.input-label{
+  background: #fff;
+  border: 1px solid #2e70a1;
+  color: #2e70a1;
+  padding: 14px 35px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* PAYMEMET */
+.money-cards ul li{ display: inline-block; }
+.money-cards .money-card {
+  width: 44px;
+  height: 27px;
+  margin-left: 12px
+}
+
+.payment-method {
+  background-image: url(../images/Bkg/payment-Bkg.png);
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  color: #fff
+}
+
+/* FOOTER */
+.Footer {
+  width: 100%;
+  min-height: 700px;
+  background: url(../images/Bkg/Footer-Bkg.png);
+  background-size: cover;
+  background-position: center center;
+}
+.Footer .footer-wrapper {
+  padding: 280px 0;
+}
+.Footer ul li a {color: #e0e0e0; padding:7px 0; display: inline-block;}
+.Footer-bottom {
+  background: white;
+  padding: 100px 0;
+  color: #666;
+}
